@@ -20,5 +20,6 @@ resource "aws_instance" "app_server" {
   tags = {
     Name = "ExampleAppServerInstance"
     ApplicationEnv = "aaa"
+    Environment = "bbb"
   }
 }
