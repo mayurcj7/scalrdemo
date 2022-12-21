@@ -19,8 +19,6 @@ resource "aws_instance" "app_server" {
 
   tags = {
     Name = "ExampleAppServerInstance"
-    #Environment = "bbb"
-    #ApplicationEnv = "dev"
   }
 }
 #
