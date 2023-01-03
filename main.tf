@@ -15,7 +15,9 @@ provider "aws" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
-  instance_type = "t2.micro"
+  #instance_type = "t2.micro"
+  instance_type = "t2.medium"
+  cpu_core_count = 2
 
   tags = {
     Name = "ExampleAppServerInstance",
