@@ -18,7 +18,7 @@ resource "aws_instance" "app_server" {
   #instance_type = "t2.micro"
   instance_type = "t2.medium"
   cpu_core_count = 2
-
+  cpu_threads_per_core = 5
   tags = {
     Name = "ExampleAppServerInstance",
     ApplicationEnv = "aaa",
